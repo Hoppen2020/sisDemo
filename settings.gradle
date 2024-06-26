@@ -1,0 +1,3 @@
+include ':app',':sisDemo'
+rootProject.name='sisDemo'
+include ':rasrcs'

@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+            android:text="语音合成(http版)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/title"/>
+    <TextView
+            android:text="请输入以下参数(带*参数,为必输入参数): "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/title"
+            android:layout_marginBottom="-54dp"
+            android:id="@+id/title1"/>
+    <TextView
+            android:text="合成文本*: "
+            android:layout_width="110dp"
+            android:layout_marginLeft="30dp"
+            android:layout_alignBottom="@+id/title1"
+            android:layout_height="wrap_content"
+            android:id="@+id/itext"
+            android:layout_marginBottom="-30dp"/>
+
+    <EditText
+        android:id="@+id/input_text"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/title1"
+        android:layout_marginBottom="-35dp"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@+id/itext"
+        android:ems="10"
+        android:inputType="textPersonName" />
+    <TextView
+            android:text="合成结果: "
+            android:layout_width="110dp"
+            android:layout_marginLeft="30dp"
+            android:layout_alignBottom="@+id/input_text"
+            android:layout_height="wrap_content"
+            android:id="@+id/segmentResult"
+            android:layout_marginBottom="-37dp"/>
+
+    <TextView
+        android:id="@+id/out_result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/input_text"
+        android:layout_marginBottom="-62dp"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/segmentResult"
+        android:background="@android:drawable/edit_text"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_above="@+id/startplay"
+        android:layout_marginBottom="1dp"
+        android:text="点击合成" />
+    <Button
+        android:id="@+id/startplay"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:text="点击播放" />
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">sisDemo</string>
+    <!-- 认证用的ak和sk硬编码到代码中或者明文存储都有很大的安全风险，建议在配置文件或者环境变量中密文存放，使用时解密，确保安全； -->
+    <!-- 本示例以ak和sk保存在配置文件中来实现身份验证为例，运行本示例前请先在配置文件中设置变量HUAWEICLOUD_SDK_AK和HUAWEICLOUD_SDK_SK。-->
+</resources>
